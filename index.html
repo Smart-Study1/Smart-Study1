@@ -27,7 +27,11 @@
   </div>
   
 </div>
-<div class="notes-body">
+<div class="main_page">
+  <div class="notes">
+    <p>Notes</p>
+  </div>
+
 <div id="container">
   <h1>Chapter Notes</h1>
   <label for="classDropdown">Select a Class:</label>
@@ -51,91 +55,8 @@
     <!-- Notes will be displayed using JavaScript -->
   </div>
 </div>
-</div>
-
-<div class="main_page">
-  <div class="notes">
-    <p>Notes</p>
-  </div>
-
-</div>
-  <div class="class11">
-
-    <div class="class11-head">
-      <p>Class 11</p>
-    </div>
-
-    <div class="class11-body">
-        <div class="bio11">
-          <p>Biology</p>
-            <a>Chapter 1</a>
-    
-        </div>
-        <div class="chem11">
-          <p>Chemistry</p>
-            <a>Chapter 1</a>
-
-        </div>
-
-        <div class="phy11">
-          <p>Physics</p>
-          <a>Chapter 1</a>
-          
-
-        </div>
-
-        <div class="maths11">
-          <p>Mathematics</p>
-          <a>Chapter 1</a>
-
-        </div>
-    </div>
-
-    </div>
 
 
-  <div class="class12-body">
-                    
-    <div class="bio12">
-      <p>Biology</p>
-      <a>Chapter 1</a>
-    </div>
-
-    <div class="chem12">
-      <p>Chemistry</p>
-      <a>Chapter 1</a>
-    </div>
-
-    <div class="phy12">
-      <p>Physics</p>
-      <a>Chapter 1</a>
-    </div>
-
-    <div class="maths12">
-      <p>Mathematics</p>
-      <a>Chapter 1</a>
-    </div>
-
-  </div>
-</div>
-
-
-
-
-
-<div class="suggestion">
-  <form>
-    Full Name <input type="text">
-    Age <input type="text">
-    Class <input type="text">
-    Email <input type="text">
-    Mobile no. <input type="text">
-    Gender <input type="checkbox" name="selection"> Male
-    <input type="submit" value="submit">
-    <input type="reset" value="clear">
-
-  </form>
-</div>
 
 <div class="footer">
   <h4> Support us On </h4>
@@ -274,7 +195,10 @@
   #container {
     height: 300px;
     width: 600px;
-    margin: 0 auto;
+    margin: 20px;
+    margin-left: 450px;
+    align-self: center;
+    justify-self: center;
     padding: 20px;
     background-color: white;
     border-radius: 5px;
@@ -401,73 +325,76 @@ darkbtn.onclick=function(){
   darkbtn.classList.toggle("dark-btn-on");
   document.body.classList.toggle("dark-theme");
 }
-
-var subjectsByClass = {
-  class11: ["Math", "Physics", "English", "Biology", "Chemistry"],
-  class12: ["Math", "Physics", "English", "Biology", "Chemistry"],
-};
-
-var chaptersBySubject = {
-  Math: ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4"],
-  English: ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4"],
-  Physics: ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4"],
-  Biology: ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4"],
-  Chemistry: ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4"],
-};
-
-var notesByClass = {
-  class11: {
-    Math: {
-      "Chapter 1": "Notes for Chapter 1 of Math in Class 11. <a href='https://drive.google.com/file/d/18uM-hWsQfgjSnRd-Gos4_kC5sNJ77O41/view?usp=drivesdk' target='_blank'>Download PDF</a>",
-      "Chapter 2": "Notes for Chapter 2 of Math in Class 11. <a href='https://drive.google.com/file/d/18uM-hWsQfgjSnRd-Gos4_kC5sNJ77O41/view?usp=drivesdk' target='_blank'>Download PDF</a>",
-      "Chapter 3": "Notes for Chapter 3 of Math in Class 11. <a href='https://drive.google.com/file/d/18uM-hWsQfgjSnRd-Gos4_kC5sNJ77O41/view?usp=drivesdk' target='_blank'>Download PDF</a>",
-      "Chapter 4": "Notes for Chapter 4 of Math in Class 11. <a href='https://drive.google.com/file/d/18uM-hWsQfgjSnRd-Gos4_kC5sNJ77O41/view?usp=drivesdk' target='_blank'>Download PDF</a>",
-    },
-    Physics: {
-      "Chapter 1": "Notes for Chapter 1 of Math in Class 11.
-  },
-  class12: {
-    Physics:{
-       "Chapter 1": "Notes for Chapter 1 of Physics in Class 12. <a href='https://drive.google.com/file/d/1TZUOOwSkKLkpimzRXqUv4Rva1VqwAxM4/view?usp=drivesdk' target='_blank'Download PDF</a>",
-       "Chapter 2": "Notes for Chapter 2 of Physics in Class 12. <a href='https://drive.google.com/file/d/1TiTkOzMhyW_6mOgdSthgqgR1OJV06oRN/view?usp=drivesdk' target='_blank'Download PDF</a>",
-       "Chapter 3": "Notes for Chapter 3 of Physics in Class 12. <a href='https://drive.google.com/file/d/1ToRek9ZleXkLtBBHzhOGd6SLaN9y4dr1/view?usp=drivesdk' target='_blank'Download PDF</a>",
-       "Chapter 4": "Notes for Chapter 4 of Physics in Class 12. <a href='' target='_blank'Download PDF</a>",
-       "Chapter 5": "Notes for Chapter 5 of Physics in Class 12. <a href='' target='_blank'Download PDF</a>",
-       "Chapter 6": "Notes for Chapter 6 of Physics in Class 12. <a href='' target='_blank'Download PDF</a>",
-       "Chapter 7": "Notes for Chapter 7 of Physics in Class 12. <a href='' target='_blank'Download PDF</a>",
-       "Chapter 8": "Notes for Chapter 8 of Physics in Class 12. <a href='' target='_blank'Download PDF</a>",
-       "Chapter 9": "Notes for Chapter 9 of Physics in Class 12. <a href='' target='_blank'Download PDF</a>",
-    },
-    Biology: {
-      "Chapter 1": "Notes for Chapter 1 of Biology in Class 12. <a href='https://drive.google.com/file/d/18uM-hWsQfgjSnRd-Gos4_kC5sNJ77O41/view?usp=drivesdk' target='_blank'>Download PDF</a>",
-      "Chapter 2": "Notes for Chapter 2 of Biology in Class 12. <a href='https://drive.google.com/file/d/18uM-hWsQfgjSnRd-Gos4_kC5sNJ77O41/view?usp=drivesdk' target='_blank'>Download PDF</a>",
-      "Chapter 3": "Notes for Chapter 3 of Biology in Class 12. <a href='https://drive.google.com/file/d/18uM-hWsQfgjSnRd-Gos4_kC5sNJ77O41/view?usp=drivesdk' target='_blank'>Download PDF</a>",
-      "Chapter 4": "Notes for Chapter 4 of Biology in Class 12. <a href='https://drive.google.com/file/d/18uM-hWsQfgjSnRd-Gos4_kC5sNJ77O41/view?usp=drivesdk' target='_blank'>Download PDF</a>",
-    },
-    Chemistry: {
-      "Chapter 1": "Notes for Chapter 1 of Chemistry in Class 12",
-      "Chapter 2": "Notes for Chapter 2 of Chemistry in Class 12",
-      "Chapter 3": "Notes for Chapter 3 of Chemistry in Class 12",
-    },
-  },
-
-};
-
-function populateSubjects() {
-  var classDropdown = document.getElementById("classDropdown");
-  var subjectDropdown = document.getElementById("subjectDropdown");
-  var subjectLabel = document.getElementById("subjectLabel");
-
-  var selectedClass = classDropdown.value;
-
-  subjectDropdown.innerHTML = "";
-  chapterDropdown.innerHTML = "";
-  notesContainer.innerHTML = "";
+  var subjectsByClass = {
+    class11: ["Math", "Physics", "English", "Biology", "Chemistry"],
+    class12: ["Math", "Physics", "English", "Biology", "Chemistry"],
+  };
   
-  if (selectedClass) {
-    subjectLabel.style.display = "block";
-    subjectDropdown.style.display = "inline-block";
-    var subjects = subjectsByClass[selectedClass];
+  var chaptersBySubject = {
+    Math: ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4"],
+    English: ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4"],
+    Physics: ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4"],
+    Biology: ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4"],
+    Chemistry: ["Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4"],
+  };
+  
+  var notesByClass = {
+    class11: {
+      Math: {
+        "Chapter 1": "Notes for Chapter 1 of Math in Class 11. <a href='https://drive.google.com/file/d/18uM-hWsQfgjSnRd-Gos4_kC5sNJ77O41/view?usp=drivesdk' target='_blank'>Download PDF</a>",
+        "Chapter 2": "Notes for Chapter 2 of Math in Class 11. <a href='https://drive.google.com/file/d/18uM-hWsQfgjSnRd-Gos4_kC5sNJ77O41/view?usp=drivesdk' target='_blank'>Download PDF</a>",
+        "Chapter 3": "Notes for Chapter 3 of Math in Class 11. <a href='https://drive.google.com/file/d/18uM-hWsQfgjSnRd-Gos4_kC5sNJ77O41/view?usp=drivesdk' target='_blank'>Download PDF</a>",
+        "Chapter 4": "Notes for Chapter 4 of Math in Class 11. <a href='https://drive.google.com/file/d/18uM-hWsQfgjSnRd-Gos4_kC5sNJ77O41/view?usp=drivesdk' target='_blank'>Download PDF</a>",
+      },
+      Biology: {
+        "Chapter 1": "Notes for Chapter 1 of Biology in Class 12. <a href='https://drive.google.com/file/d/18uM-hWsQfgjSnRd-Gos4_kC5sNJ77O41/view?usp=drivesdk' target='_blank'>Download PDF</a>",
+        "Chapter 2": "Notes for Chapter 2 of Biology in Class 12. <a href='https://drive.google.com/file/d/18uM-hWsQfgjSnRd-Gos4_kC5sNJ77O41/view?usp=drivesdk' target='_blank'>Download PDF</a>",
+        "Chapter 3": "Notes for Chapter 3 of Biology in Class 12. <a href='https://drive.google.com/file/d/18uM-hWsQfgjSnRd-Gos4_kC5sNJ77O41/view?usp=drivesdk' target='_blank'>Download PDF</a>",
+        "Chapter 4": "Notes for Chapter 4 of Biology in Class 12. <a href='https://drive.google.com/file/d/18uM-hWsQfgjSnRd-Gos4_kC5sNJ77O41/view?usp=drivesdk' target='_blank'>Download PDF</a>",
+      },
+      Chemistry: {
+        "Chapter 1": "Notes for Chapter 1 of Chemistry in Class 12",
+        "Chapter 2": "Notes for Chapter 2 of Chemistry in Class 12",
+        "Chapter 3": "Notes for Chapter 3 of Chemistry in Class 12",
+      },
+      // ... other subjects
+    },
+    class12: {
+      Math: {
+        "Chapter 1": "Notes for Chapter 1 of Math in Class 11. <a href='https://drive.google.com/file/d/18uM-hWsQfgjSnRd-Gos4_kC5sNJ77O41/view?usp=drivesdk' target='_blank'>Download PDF</a>",
+        "Chapter 2": "Notes for Chapter 2 of Math in Class 11. <a href='https://drive.google.com/file/d/18uM-hWsQfgjSnRd-Gos4_kC5sNJ77O41/view?usp=drivesdk' target='_blank'>Download PDF</a>",
+        "Chapter 3": "Notes for Chapter 3 of Math in Class 11. <a href='https://drive.google.com/file/d/18uM-hWsQfgjSnRd-Gos4_kC5sNJ77O41/view?usp=drivesdk' target='_blank'>Download PDF</a>",
+        "Chapter 4": "Notes for Chapter 4 of Math in Class 11. <a href='https://drive.google.com/file/d/18uM-hWsQfgjSnRd-Gos4_kC5sNJ77O41/view?usp=drivesdk' target='_blank'>Download PDF</a>",
+      },
+      Biology: {
+        "Chapter 1": "Notes for Chapter 1 of Biology in Class 12. <a href='https://drive.google.com/file/d/18uM-hWsQfgjSnRd-Gos4_kC5sNJ77O41/view?usp=drivesdk' target='_blank'>Download PDF</a>",
+        "Chapter 2": "Notes for Chapter 2 of Biology in Class 12. <a href='https://drive.google.com/file/d/18uM-hWsQfgjSnRd-Gos4_kC5sNJ77O41/view?usp=drivesdk' target='_blank'>Download PDF</a>",
+        "Chapter 3": "Notes for Chapter 3 of Biology in Class 12. <a href='https://drive.google.com/file/d/18uM-hWsQfgjSnRd-Gos4_kC5sNJ77O41/view?usp=drivesdk' target='_blank'>Download PDF</a>",
+        "Chapter 4": "Notes for Chapter 4 of Biology in Class 12. <a href='https://drive.google.com/file/d/18uM-hWsQfgjSnRd-Gos4_kC5sNJ77O41/view?usp=drivesdk' target='_blank'>Download PDF</a>",
+      },
+      Chemistry: {
+        "Chapter 1": "Notes for Chapter 1 of Chemistry in Class 12",
+        "Chapter 2": "Notes for Chapter 2 of Chemistry in Class 12",
+        "Chapter 3": "Notes for Chapter 3 of Chemistry in Class 12",
+      },
+    },
+  };
+  
+  function populateSubjects() {
+    var classDropdown = document.getElementById("classDropdown");
+    var subjectDropdown = document.getElementById("subjectDropdown");
+    var subjectLabel = document.getElementById("subjectLabel");
+  
+    var selectedClass = classDropdown.value;
+  
+    subjectDropdown.innerHTML = "";
+    chapterDropdown.innerHTML = "";
+    notesContainer.innerHTML = "";
+    
+    if (selectedClass) {
+      subjectLabel.style.display = "block";
+      subjectDropdown.style.display = "inline-block";
+      var subjects = subjectsByClass[selectedClass];
     for (var i = 0; i < subjects.length; i++) {
       var option = document.createElement("option");
       option.text = subjects[i];
@@ -523,8 +450,10 @@ function displayNotes() {
   } else {
     notesContainer.style.display = "none";
     notesContainer.innerHTML =
-    "";
+    "none";
   }
 }
-
 </script>
+
+</body>
+</html>
