@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="header">
+      <p>SMART STUDY</p>
+
+      <div id="dark-btn">
+        <span><i class="fa-solid fa-moon"></i></span>
+      </div>
+        <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href=""><i class="fa-solid fa-user"></i> My Profile</a>
+          <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+          <a href="notes.html">Study Material</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#"><i class="fa-solid fa-phone"></i> Contact</a>
+        </div>
+        
+        <div id="content">
+          <div class="hamburger" id="hamburger" onclick="toggleNav()">&#9776;</div>
+        </div>
+        
+      </div>
+
+    <div class="main_page">
+
+        <div class="main-element">
+          
+            <div class="notes">
+                <p>Notes</p>
+
+                
+                </div>
+            </div>
+        </div>
+
+
+        <div class="class11">
+
+                  <div class="class11-head">
+                    <p>Class 11</p>
+                  </div>
+
+                  <div class="class11-body">
+                      <div class="bio11">
+                        <p>Biology</p>
+                          <a>Chapter 1</a>
+                  
+                      </div>
+                      <div class="chem11">
+                        <p>Chemistry</p>
+                          <a>Chapter 1</a>
+
+                      </div>
+
+                      <div class="phy11">
+                        <p>Physics</p>
+                        <a>Chapter 1</a>
+                        
+
+                      </div>
+
+                      <div class="maths11">
+                        <p>Mathematics</p>
+                        <a>Chapter 1</a>
+
+                      </div>
+                  </div>
+
+                  </div>
+                </div>
+
+                
+                <div class="class12-head">
+                  <p>Class 12</p>
+
+                  <div class="class12-body">
+                    
+                    <div class="bio12">
+                      <p>Biology</p>
+                      <a>Chapter 1</a>
+                    </div>
+
+                    <div class="chem12">
+                      <p>Chemistry</p>
+                      <a>Chapter 1</a>
+                    </div>
+
+                    <div class="phy12">
+                      <p>Physics</p>
+                      <a>Chapter 1</a>
+                    </div>
+
+                    <div class="maths12">
+                      <p>Mathematics</p>
+                      <a>Chapter 1</a>
+                    </div>
+
+                  </div>
+        <div class="pyq">
+            <p>PYQ</p>
+            <a href="notes.html"> NEET 2023 </a>
+        </div>
+        
+    </div>
+
+    <div class="footer">
+      <h4> Support us On </h4>
+      <p class="socialmedia">
+          Instagram <br> Youtube <br> Facebook <br> Twitter
+      </p>
+      
+      <div class="copyright">
+          <hr>
+          <p style="font-size: smaller;"> Conditions of Use & Sale<br>© 2023-2023, Youthhub.com, Inc. or its affiliates</p>
+    
+      </div>
+      
+    </div>
+
+      
+</body>
+</html>
+
+<style>
+  *{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .sign-up{
+    background-color: aqua;
+    color:black;
+    width: auto;
+    height: 50px;
+  }
+  :root{
+    --body-color:#efefef;
+    --header-color:yellow;
+    --bg-color:#fff;
+    --p-color:#000;
+    --box-shadow-color:#00000033;
+    --span-color:black;
+    --a-color:red;
+
+  }
+  .dark-theme{
+    --body-color:#0a0a0a;
+    --header-color:#000;
+    --bg-color:#000;
+    --p-color:#fff;
+    --box-shadow-color:rgb(166, 166, 166);
+    --span-color:#fff;
+    --a-color:yellow;
+  }
+  body{
+    background: var(--body-color);
+    text-decoration: var(--p-color);
+    box-shadow: var(--box-shadow-color);
+    ruby-span:var(--span-color);
+    text-shadow: var(--a-color);
+    transition:background 0.3s;
+  }
+  #dark-btn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background:yellow;
+    width: 18px;
+    border-radius: 15px;
+    padding: 2px 3px;
+    cursor: pointer;
+    display: flex;
+    transition: background 0.5s;
+  }
+  #dark-btn span{
+    color:var(--span-color);
+    display: inline-flex;
+  }
+  #dark-btn.dark-btn-on{
+    padding-left: 18px;
+    background: #000;
+
+  }
+  .header{
+    width: 100%;
+    height: 80px;
+    background-color: var(--header-color);
+    margin: 0%;
+    box-shadow: 2px 2px 4px var(--box-shadow-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header p{
+    font-size:65px;
+    color: var(--p-color);
+    text-align: center;
+    text-shadow: #000000 2px;
+    font-family: fantasy;
+  }
+  .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 16px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #ffee00;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #content {
+    transition: margin-left 0.5s;
+    padding: 16px;
+  }
+
+  .hamburger {
+    font-size: 30px;
+    cursor: pointer;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 1;
+    color: var(--p-color);
+  } 
+
+  .notes{
+    text-align: center;
+    width:100%;
+    background-color:var(--body-color);
+  }
+  .notes p{
+    font-size: 60px;
+    margin-top: 10px;
+    top: 100px;
+    color: var(--p-color);
+  }
+  .class11-head p{
+    font-size: 30px;
+    color: var(--p-color);
+  }
+  .bio11 p{
+    font-size: 25px;
+    color: var(--p-color);
+  }
+  .bio11 a{
+    color: var(--a-color);
+    font-size: 20px;
+    margin: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .pyq{
+    width: 100%;
+    height: 700px;
+    background-color:var(--body-color);;
+  }
+  .pyq p{
+    font-size: 60px;
+    text-align: center;
+    font-family:Arial;
+    color: var(--p-color);
+  }
+  .pyq a{
+    font-size: 40pxz;
+    color: var(--p-color);
+  }
+  .footer{
+        height: 500px;
+        width: 100%;
+        background-color: black;
+    }
+    h4{
+        font-size: 20px;
+        color: aliceblue;
+        margin: 10px;
+        
+    }
+    .socialmedia{
+        color: aliceblue;
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    .copyright{
+        background-color: black;
+        color: aliceblue;
+        padding-top: 400px;
+        text-align: center;
+        margin-bottom:10px;
+    }
+    .copyright p{
+      margin-bottom:10px ;
+    }
+
+</style>
+
+
+<script>
+  
+    function toggleNav() {
+      var sidebar = document.getElementById("mySidebar");
+      var hamburger = document.getElementById("hamburger");
+      
+      sidebar.style.width = sidebar.style.width === "250px" ? "0" : "250px";
+      hamburger.style.display = "none"; // Hide the hamburger icon
+    }
+    
+    function closeNav() {
+      var sidebar = document.getElementById("mySidebar");
+      var hamburger = document.getElementById("hamburger");
+      
+      sidebar.style.width = "0";
+      hamburger.style.display = "block"; // Display the hamburger icon
+    }
+    var darkbtn = document.getElementById("dark-btn");
+darkbtn.onclick=function(){
+  darkbtn.classList.toggle("dark-btn-on");
+  document.body.classList.toggle("dark-theme");
+}
+</script>
+    
